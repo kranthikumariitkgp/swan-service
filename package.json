@@ -1,0 +1,45 @@
+{
+  "name": "dxp-node-payment",
+  "version": "10.0.0",
+  "description": "This a common payment module for dxp",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix api/**",
+    "precommitcheck": "npm-run-all --parallel lint",
+    "sonar-report": "sonar-scanner",
+    "test": "nyc mocha test/api/**/**/*.test.js"
+  },
+  "author": "Kranthi Kumar",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/decurtis/dxp-node-payment#readme",
+  "dependencies": {
+    "dxp-node-httpclient": "^1.0.9",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "httpclient": "^0.1.0",
+    "lodash": "^4.17.11",
+    "qs": "^6.5.2",
+    "url-join": "^4.0.0",
+    "xdate": "^0.8.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "esm": "^3.2.25",
+    "mocha": "^3.5.0",
+    "nyc": "^14.1.1",
+    "pre-commit": "^1.2.2",
+    "sinon": "^3.2.1"
+  },
+  "publishConfig": {
+    "registry": "https://artifacts.dxp-decurtis.com/nexus/repository/npm-private/"
+  }
+}
