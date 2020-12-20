@@ -9,6 +9,7 @@ const secretKey = 'secretKey';
 
 const maxPageSize = 10;
 const reviewsSize = 2;
+const saltRounds = 10;
 
 module.exports = {
   successMessage,
@@ -19,4 +20,5 @@ module.exports = {
   unauthorisedMessage,
   maxPageSize,
   reviewsSize,
+  saltRounds,
 };

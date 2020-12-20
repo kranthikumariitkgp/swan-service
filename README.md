@@ -1,17 +1,17 @@
 # Skeleton project for Swagger
-# README SWAN Microservices#
+# README of SWAN Microservices #
 
-This repo is a swan microservices
+This is Repo of swan microservices
 
 ## Software's used
-    •   NodeJs
-	•	ExpressJs
-	•	Mongodb
+    •  NodeJs
+	•  ExpressJs
+	•  Mongodb
 
 ### Mongo setup
 mongo setup can be found at file mongo.txt
 
-### How do I get set up? ###
+### How do I get set up code? ###
 
 ```
 npm install
@@ -20,6 +20,7 @@ npm install
 ```
 npm start
 ```
+
 This contains 3 micro services.
 
 1. MicroService-1 (API Gateway):
