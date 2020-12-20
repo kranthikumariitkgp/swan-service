@@ -1,0 +1,23 @@
+use swan-service
+
+db.createUser(
+  {
+    user: "swanUsername",
+    pwd:  "Test@123",
+    roles: [ { role: "readWrite", db: "swan-service" } ]
+  }
+)
+
+db.createCollection("users")
+db.createCollection("product")
+db.createCollection("review")
+
+// use below command to maintain unique email id for registration
+db.users.createIndex({ "email": 1 }, { unique: true })
+
+// use below command to maintain unique barcode in product collection
+db.product.createIndex({ "barcode": 1 }, { unique: true })
+
+db.review.aggregate( [
+  { $set: { "userId": "$_id" } }
+] )

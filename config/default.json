@@ -1,0 +1,22 @@
+{
+    "server": {
+        "port": "3000",
+        "host": "localhost",
+        "logLevel": "debug",
+        "swaggerHost": "$SWAGGER_HOST",
+        "timezone": "Asia/Kolkata"
+    },
+    "urls": {
+        "productServices": "http://localhost:3000/"
+    },
+    "maxPaginationSize": 10,
+    "mongodb": {
+        "baseURL": "mongodb://localhost:27017/",
+        "dbName": "swan-service",
+        "debug": "true",
+        "username": "swanUsername",
+        "password": "Test@123",
+        "poolSize": 10,
+        "authSource": "swan-service"
+    }
+}

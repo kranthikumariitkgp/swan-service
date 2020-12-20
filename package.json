@@ -1,45 +1,31 @@
 {
-  "name": "dxp-node-payment",
-  "version": "10.0.0",
-  "description": "This a common payment module for dxp",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint --fix api/**",
-    "precommitcheck": "npm-run-all --parallel lint",
-    "sonar-report": "sonar-scanner",
-    "test": "nyc mocha test/api/**/**/*.test.js"
-  },
-  "author": "Kranthi Kumar",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/decurtis/dxp-node-payment#readme",
+  "name": "swan-microservice",
+  "version": "0.0.1",
+  "private": true,
+  "description": "New Swagger API Project",
+  "keywords": [],
+  "main": "app.js",
   "dependencies": {
-    "dxp-node-httpclient": "^1.0.9",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3",
-    "httpclient": "^0.1.0",
-    "lodash": "^4.17.11",
-    "qs": "^6.5.2",
-    "url-join": "^4.0.0",
-    "xdate": "^0.8.2"
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "dateformat": "^4.3.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.8",
+    "querystring": "^0.2.0",
+    "swagger-express-mw": "^0.7.0"
   },
   "devDependencies": {
-    "chai": "^4.1.1",
-    "chai-as-promised": "^7.1.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3",
-    "esm": "^3.2.25",
-    "mocha": "^3.5.0",
-    "nyc": "^14.1.1",
-    "pre-commit": "^1.2.2",
-    "sinon": "^3.2.1"
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "should": "^7.1.0",
+    "supertest": "^1.0.0"
   },
-  "publishConfig": {
-    "registry": "https://artifacts.dxp-decurtis.com/nexus/repository/npm-private/"
+  "scripts": {
+    "start": "node app.js"
   }
 }
